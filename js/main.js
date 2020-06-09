@@ -1,3 +1,10 @@
+// Получение формы ввода нового задания
+let newTaskForm = document.forms.frm_new_task;
+console.log(newTaskForm)
+
+
+
+
 //Получение объектов верстки
 let newToDoBtn = document.getElementById("newToDoBtn"); // получение объекта кнопки создания новой задачи
 let toDoTitle = document.getElementById("toDoTitle"); // получение объекта заголовка задачи

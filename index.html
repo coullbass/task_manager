@@ -11,15 +11,31 @@
 </head>
 
 <body>
-    <input class="new-to-do" id="newToDoBtn" type="button" value="Создать">
-    <textarea class="to-do-text-area" id="toDoTextInput" cols="50" rows="2"></textarea>
-    <input id="toDoTitle" class="to-do-title" type="text">
-    
-    
-    <ul id="toDoList">
-        
-    </ul>
+    <!-- Форма ввода полей задания -->
+    <form name="frm_new_task">
+    <input name="newTaskBTN" class="frm_new_task__btn" id="newToDoBtn" type="button" value="Создать">
+    <textarea name="newTaskText" class="frm_new_task__text-area" id="toDoTextInput" cols="50" rows="2"></textarea>
+    <input name="newTaskTitle" id="toDoTitle" class="frm_new_task__to-do-title" type="text">
+    </form>
+<!-- Форма ввода полей задания -->
 
+<!-- Блок вывода списка сохранённых заданиё -->
+    <div class="actual-task">
+    <ul id="toDoList">
+   </ul>
+</div>
+<!-- Блок вывода списка сохранённых заданиё -->
+
+<!-- to do: блок для сохранения выполеныхзаданий -->
+<div class="complit-task">
+    <ul class="coplit-task-list">
+
+    </ul>
+</div>
+<!-- //блок для сохранения выполеныхзаданий -->
+
+<!-- мини игра -->
+<div class="mini_game_sqr">
     <button class="left">лево</button>
     <button class="right">право</button>
     <button class="up">в верх</button>
@@ -30,6 +46,9 @@
     <div>
         <div class="square"></div>
     </div>
+</div>
+<!-- мини игра -->
+
     <script src="script.js"></script>
     <script>
         
